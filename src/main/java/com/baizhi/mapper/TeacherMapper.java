@@ -10,5 +10,8 @@ import java.util.List;
 public interface TeacherMapper extends Mapper<Teacher>, MySqlMapper<Teacher> {
 
     @Select("select * from teacher where user_name=#{user_name}")
+    
+    
+    
     List<Teacher> selecttesthu(Teacher teacher);
 }
